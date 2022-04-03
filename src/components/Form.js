@@ -10,11 +10,11 @@ export default function Form() {
         randomImage:"http://i.imgflip.com/1bij.jpg",
     });
 
+
     const handleChange = (event) => {
         const {name, value} = event.target;
         setMemeImg({...memeImg, [name]: value});
     }
-
 
 
         function getImageUrl(){
@@ -30,7 +30,7 @@ export default function Form() {
 
                     <input
                     type= "text"
-                    placeholder="Shut Up"
+                    placeholder="Top Text"
                     className="input--box"
                     name="topText"
                     value={memeImg.topText}
@@ -40,7 +40,7 @@ export default function Form() {
 
                     <input 
                     type= "text" 
-                    placeholder="and take my money" 
+                    placeholder="Bottom Text"
                     className="input--box" 
                     name="bottomText"
                     value={memeImg.bottomText}
